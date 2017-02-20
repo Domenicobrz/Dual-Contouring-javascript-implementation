@@ -1,6 +1,6 @@
 # Dual-Contouring-javascript-implementation
 
-Work in Progress: the repo will be updated daily and will feature a fully working implementation in the following days
+**Work in Progress: the repo will be updated daily and will feature a fully working implementation in the following days**
 
 
 
