@@ -1,10 +1,8 @@
 # Dual-Contouring-javascript-implementation
 
-**Work in Progress: the repo will be updated daily and will feature a fully working implementation in the following days**
-**Progress so far: Octree subdivision works correctly and will be integrated with isosurface extraction in the following days**
+**Progress so far**: Octree subdivision works correctly and will be integrated with isosurface extraction in the following days
+
 ![Screenshot](/screenshots/octree.png)
-
-
 
 This javascript implementation takes [Nick's excellent explanations](http://ngildea.blogspot.it/2014/11/implementing-dual-contouring.html) on the inner workings of the algorithm and expands it further in the topics he didn't discuss in depth, such as ContourCellProc's routines and the global variables of the original octree structure  of Tao Ju.
 
