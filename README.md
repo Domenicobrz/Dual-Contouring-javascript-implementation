@@ -2,7 +2,7 @@
 
 **Work in Progress: the repo will be updated daily and will feature a fully working implementation in the following days**
 **Progress so far: Octree subdivision works correctly and will be integrated with isosurface extraction in the following days**
-![Screenshot](screenshoots/octree.png)
+![Screenshot](/screenshots/octree.png)
 
 
 
