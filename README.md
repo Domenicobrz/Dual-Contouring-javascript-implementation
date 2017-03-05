@@ -10,7 +10,7 @@ We'll start from ContourCellProc(...);
 
 This function acts on internal nodes only, and starts by recursively calling itself on each of its eight children
 
-```
+```javascript
 for (i = 0; i < 8; i++) {
     ContourCellProc(node.children[i], indexBuffer);
 }
