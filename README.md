@@ -21,3 +21,6 @@ for (i = 0; i < 8; i++) {
 It laters calls ContourFaceProc(...); on the 12 faces adjacent to the children of the current node, highlighted in gray in the following picture
 
 ![Screenshot](/screenshots/ccpfaces.png)
+
+
+<img src="https://github.com/Domenicobrz/Dual-Contouring-javascript-implementation/blob/master/screenshots/ccpedges.png" width="100px">
