@@ -1,7 +1,7 @@
 # Dual-Contouring-javascript-implementation
 
 
-<img src="https://github.com/Domenicobrz/Dual-Contouring-javascript-implementation/blob/master/screenshots/octree3.png" width="200px">
+<img src="https://github.com/Domenicobrz/Dual-Contouring-javascript-implementation/blob/master/screenshots/octree3.png" width="350px">
 
 This javascript implementation takes [Nick's excellent explanations](http://ngildea.blogspot.it/2014/11/implementing-dual-contouring.html) on the inner workings of the algorithm and expands it further in the topics he didn't discuss in depth, such as ContourCellProc's routines and the global variables of the original octree structure  of Tao Ju.
 
@@ -16,32 +16,17 @@ We'll start from ContourCellProc(...);
 This function acts on internal nodes only, and starts by recursively calling itself on each of its eight children
 
 ```javascript
-<<<<<<< HEAD
 ...
 for (i = 0; i < 8; i++) {
     ContourCellProc(node.children[i], indexBuffer);
 }
 ...
-=======
-[...]
-for (i = 0; i < 8; i++) {
-    ContourCellProc(node.children[i], indexBuffer);
-}
-[...]
->>>>>>> origin/master
 ```
 
 It laters calls ContourFaceProc(...); on the 12 faces adjacent to the children of the current node, highlighted in gray in the following picture
 
-<<<<<<< HEAD
-<img src="https://github.com/Domenicobrz/Dual-Contouring-javascript-implementation/blob/master/screenshots/ccpfaces.png" width="200px">
+<img src="https://github.com/Domenicobrz/Dual-Contouring-javascript-implementation/blob/master/screenshots/ccpfaces.png" width="250px">
 
 And finishes off by calling ContourEdgeProc(...) on the 6 shared edges depicted in red in the next picture
 
-<img src="https://github.com/Domenicobrz/Dual-Contouring-javascript-implementation/blob/master/screenshots/ccpedges.png" width="200px">
-=======
-![Screenshot](/screenshots/ccpfaces.png)
-
-
-<img src="https://github.com/Domenicobrz/Dual-Contouring-javascript-implementation/blob/master/screenshots/ccpedges.png" width="100px">
->>>>>>> origin/master
+<img src="https://github.com/Domenicobrz/Dual-Contouring-javascript-implementation/blob/master/screenshots/ccpedges.png" width="250px">
