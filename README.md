@@ -16,17 +16,32 @@ We'll start from ContourCellProc(...);
 This function acts on internal nodes only, and starts by recursively calling itself on each of its eight children
 
 ```javascript
+<<<<<<< HEAD
 ...
 for (i = 0; i < 8; i++) {
     ContourCellProc(node.children[i], indexBuffer);
 }
 ...
+=======
+[...]
+for (i = 0; i < 8; i++) {
+    ContourCellProc(node.children[i], indexBuffer);
+}
+[...]
+>>>>>>> origin/master
 ```
 
 It laters calls ContourFaceProc(...); on the 12 faces adjacent to the children of the current node, highlighted in gray in the following picture
 
+<<<<<<< HEAD
 <img src="https://github.com/Domenicobrz/Dual-Contouring-javascript-implementation/blob/master/screenshots/ccpfaces.png" width="200px">
 
 And finishes off by calling ContourEdgeProc(...) on the 6 shared edges depicted in red in the next picture
 
 <img src="https://github.com/Domenicobrz/Dual-Contouring-javascript-implementation/blob/master/screenshots/ccpedges.png" width="200px">
+=======
+![Screenshot](/screenshots/ccpfaces.png)
+
+
+<img src="https://github.com/Domenicobrz/Dual-Contouring-javascript-implementation/blob/master/screenshots/ccpedges.png" width="100px">
+>>>>>>> origin/master
