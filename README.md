@@ -1,7 +1,7 @@
 # Dual-Contouring-javascript-implementation
 
 
-<img src="https://github.com/Domenicobrz/Dual-Contouring-javascript-implementation/blob/master/screenshots/octree3.png" width="350px">
+<img src="https://github.com/Domenicobrz/Dual-Contouring-javascript-implementation/blob/master/screenshots/octree3.png" width="450px">
 
 This javascript implementation takes [Nick's excellent explanations](http://ngildea.blogspot.it/2014/11/implementing-dual-contouring.html) on the inner workings of the algorithm and expands it further in the topics he didn't discuss in depth, such as ContourCellProc's routines and the global variables of the original octree structure  of Tao Ju.
 
@@ -11,7 +11,7 @@ We'll define the following order convention for the children of each internal no
 
 <img src="https://github.com/Domenicobrz/Dual-Contouring-javascript-implementation/blob/master/screenshots/childrenorder.png" width="200px">
 
-Similiarly, the vertex order convention is as following
+Similiarly, the vertex order convention is as follow
 
 <img src="https://github.com/Domenicobrz/Dual-Contouring-javascript-implementation/blob/master/screenshots/vertorder.png" width="200px">
 
@@ -42,3 +42,14 @@ it would try to recursively call it self on the four faces visible in the next i
 The dark gray region represents the 4 shared faces, the light gray region encapsulate the children sharing those faces 
 
 <img src="https://github.com/Domenicobrz/Dual-Contouring-javascript-implementation/blob/master/screenshots/fpf.jpg" width="250px">
+
+Afterwards this function will call ContourEdgeProc(...) on the four edges shared by the children of both internal nodes, highlighted here in red
+
+<img src="https://github.com/Domenicobrz/Dual-Contouring-javascript-implementation/blob/master/screenshots/fpe.jpg" width="250px">
+
+ContourEdgeProc(...) needs 4 nodes with a common edge, if we consider the first of the four edges of the above image the selected children to pass over ContourEdgeProc(...) will be
+those highlighted in gray in the next picture
+
+<img src="https://github.com/Domenicobrz/Dual-Contouring-javascript-implementation/blob/master/screenshots/fpe2.jpg" width="250px">
+
+Lastly, we're going to analyze ContourCellProc(...) and ContourProcessEdge(...)
