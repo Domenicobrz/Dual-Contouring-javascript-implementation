@@ -50,6 +50,7 @@ Afterwards this function will call ContourEdgeProc(...) on the four edges shared
 ContourEdgeProc(...) needs 4 nodes with a common edge, if we consider the first of the four edges of the above image the selected children to pass over ContourEdgeProc(...) will be
 those highlighted in gray in the next picture
 
-<img src="https://github.com/Domenicobrz/Dual-Contouring-javascript-implementation/blob/master/screenshots/fpe2.jpg" width="250px">
+<img src="https://github.com/Domenicobrz/Dual-Contouring-javascript-implementation/blob/master/screenshots/fpe2.png" width="250px">
 
 Lastly, we're going to analyze ContourCellProc(...) and ContourProcessEdge(...)
+
