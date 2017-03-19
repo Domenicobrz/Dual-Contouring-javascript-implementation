@@ -52,5 +52,10 @@ those highlighted in gray in the next picture
 
 <img src="https://github.com/Domenicobrz/Dual-Contouring-javascript-implementation/blob/master/screenshots/fpe2.png" width="250px">
 
-Lastly, we're going to analyze ContourCellProc(...) and ContourProcessEdge(...)
+Lastly, we're going to analyze ContourEdgeProc(...) and ContourProcessEdge(...)
 
+ContourEdgeProc(...) is pretty straightforward
+
+If the 4 nodes passed to this function are all leaves, they're just sent to ContourProcessEdge along with the direction identifier
+
+If however, those 4 nodes are internal, we'll iterate on the 2 common edges shared by all of them
