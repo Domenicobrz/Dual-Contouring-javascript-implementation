@@ -58,4 +58,5 @@ ContourEdgeProc(...) is pretty straightforward
 
 If the 4 nodes passed to this function are all leaves, they're just sent to ContourProcessEdge along with the direction identifier
 
-If however, those 4 nodes are internal, we'll iterate on the 2 common edges shared by all of them, as depicted in the next image
+If however, those 4 nodes are internal, we'll iterate on the 2 common edges shared by all of them, the next image shows one of those 2 edges 
+and the associated 4 child nodes that would be passed to ContourProcessEdge(...)
